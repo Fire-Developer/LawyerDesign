@@ -1,0 +1,719 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+}
+:root{
+    --text-color: rgb(97, 94, 94) !important;
+}
+.progress-bar{
+    background-color: darkred;
+}
+.abp
+{ 
+    height: 90%;
+    position: relative;
+    bottom: -90px; 
+    object-fit: cover; 
+}
+.caimg{
+    width: 75%;
+    height: 80%;
+}
+.miss
+{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.active{
+    color: darkred !important;
+ }
+ .carousel-control-next
+ {
+    background: linear-gradient(to left, darkred 40%,darkred 40% );
+    height: 8vh; 
+    width: 50px; 
+    padding-right: 20px; 
+    position: absolute; 
+    opacity: 150%;
+    top: 200px;
+    right: 20px;
+    transition-property:all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+ }
+ .carousel-control-prev
+ {
+    background: linear-gradient(to left, darkred 40%,darkred 40% );
+    height: 8vh; 
+    width: 50px; 
+    padding-left: 20px; 
+    position: absolute; 
+    opacity: 150%;
+    top: 200px;
+    left: 20px;
+    transition-property:all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+ }
+
+ .mgr1:hover
+    {
+        border-bottom: 2px dashed darkred; 
+        padding-bottom: 5px;
+    }
+ .carousel-control-prev:hover,.carousel-control-next:hover
+ {
+    background: linear-gradient(to right, darkred 100%, darkred 100%);  
+    width: 100px;
+ } 
+ .quot
+ {
+    position: relative;
+ }
+ .quot::before
+ {
+    content: '\201c ';
+    top: -30px;
+    left: -30px;
+    font-family:Georgia, Times, serif;
+    color: darkred;
+ }
+ .quot::after
+ {
+    content: '\201d';
+    /* bottom: -30px; */
+    font-family:Georgia, Times, serif;
+    color: darkred;
+ }
+ .quot::before,
+ .quot::after
+ {
+    font-size: 3rem;
+    position: absolute;
+ }
+ .abt-img
+ { 
+    object-fit: cover; 
+ }
+ .mr-img
+ { 
+    background-image: url(images/about-bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: darkred;
+ }
+ .recent
+ {
+    padding-top: 18%;
+    padding-left: 7%;
+    padding-bottom: 4%;
+    background-image: url(images/bg/bg-02.jpg);
+    /* background-repeat: no-repeat; */
+ }
+ .rece
+ {
+    padding-top: 18%;
+    
+ }
+ .rece1
+ {
+    margin-top: 11%;
+    padding-top: 9%;
+    background-color: darkred; 
+    height: 90vh;
+ }
+ .rece3
+ {
+    
+    position: absolute !important; 
+ }
+ 
+/*====================== About Page ============================*/
+ 
+.banne
+{
+    position: absolute !important;
+    top: 200px;
+    left: 46%;
+     
+}
+.banne1
+{
+    position: absolute !important;
+    top: 170px;
+    left: 26%;
+     
+}
+.banne1-sub
+{
+    margin-left: 40%;
+}
+.btn1 .fas i {
+    color: white;
+    mix-blend-mode: difference;
+}
+.btn1 {
+    margin: 20px auto;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    position: relative;
+    background-color: transparent;
+}
+.btn1::before {
+    transition: all 1s;
+    content: "";
+    width: 40%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btn1 .btn1-text {
+    color: white;
+    mix-blend-mode: difference;
+}
+.btn1:hover::before {
+    background: white;
+    width: 100%;
+  }
+/* ======================Graph Section Start========================= */
+.btn2 .fas i {
+    color: white;
+    mix-blend-mode: difference;
+     
+}
+.btn2 {
+    margin: 20px auto;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    position: relative;
+    background-color: transparent;
+}
+.btn2::before {
+    transition: all 0.5s;
+    content: "";
+    width: 40%;
+    height: 100%;
+    background: darkred;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btn2 .btn2-text {
+    color: white;
+    mix-blend-mode: difference;
+}
+.btn2:hover::before {
+    background: darkred;
+    width: 100%;
+}
+.graph
+{ 
+    margin-top: 100px;
+    background-image: url(images/bg/bg-01.jpg); 
+    background-repeat: no-repeat;
+}
+.graph1
+{
+    background-color: rgba(0, 0, 0, 0.808);
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+}
+/* ======================================================== */
+  
+:root {
+    --text: #fff;
+}
+
+.gc {
+    background: var(--background1);
+    position: relative;
+    display: flex;
+    width: 400px;
+    align-items: flex-end;
+
+    height: 390px;
+} 
+.options {
+    position: relative;
+    left: 0px;
+    background: var(--background1);
+    width: 350px;
+    color:var(--text);
+    border-top: 1px solid var(--text);
+    border-left: 1px solid var(--text);
+    border-right: 1px solid var(--text);
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+} 
+.option::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 25px;
+    margin-left: -2px;
+    background:
+    linear-gradient(#ff5b66,#ff8c38);
+    width: 40px;
+    transition: 1s;
+}
+.option:nth-child(1)::after{
+    height: calc((363px / 100) * 25);
+}
+.option:nth-child(2)::after{
+    height: calc((363px / 100) * 50);
+}
+.option:nth-child(3)::after{
+    height: calc((363px / 100) * 75);
+}
+.option:nth-child(4)::after{
+    height: calc((363px / 100) * 100);
+}
+
+
+.btn3 .fas i {
+    color: white;
+    mix-blend-mode: difference;
+}
+.btn3{
+    margin: 20px auto;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    position: relative;
+    background-color: transparent;
+}
+.btn3::before {
+    transition: all 1s;
+    content: "";
+    width: 40%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btn3 .btn3-text {
+    color: white;
+    mix-blend-mode: difference;
+}
+.btn3:hover::before {
+    background: white;
+    width: 100%;
+  }
+/* ======================   Graph Section End ========================= */
+/*======================  Section Media ============================*/  
+/* ================== Graph start====================== */   
+@media screen and (max-width:1326px) {
+    .carousel-item img
+    {
+        height: 250px;
+        margin-bottom: 0px;
+    }
+    .carousel-control-next
+    { 
+      top: 80px; 
+      width: 50px;
+    }
+    .carousel-control-prev
+    {     
+      top: 80px; 
+      width: 50px;
+    }
+} 
+@media screen and (max-width:991px) {
+     
+    .rece
+    {
+       padding-top: 10%;
+       margin-left: 10%;
+       
+    }
+    .rece1
+    {
+       margin-top: 3%;
+       padding-top: 9%;
+       height: 60vh;
+    }
+    .rece3
+    {  
+       left: 15px;
+    }
+    .gtm
+    {
+        margin-top: 0px !important;
+    }
+    .mr-img
+    {
+       margin: 100px auto;
+       order: -1;
+    }
+   .mgr
+   {
+       display: block;
+       width: 100% !important;
+       text-align: center;
+       --bs-breadcrumb-divider: '';
+       margin: 5px 0;
+       padding: 10px 0;
+   }
+   .fa-bars
+   {
+       position: relative;
+       z-index: 10;
+   }
+   
+   .mgr:hover
+   {
+       background: rgb(71, 70, 70);  
+   }
+    .carousel-control-next
+    { 
+      top: 150px;
+      right: 0;
+    }
+    .carousel-control-prev
+    {     
+      top: 150px;
+      left: 0;
+    }
+    .banne
+    {
+        
+        top: 180px;
+        left: 44%;
+        
+    }
+    
+}
+@media screen and (max-width:767px) {
+    .rece
+    {
+       padding-top: 0% !important;
+       margin-left: 0% !important;
+       
+    }
+    .rece1
+    {
+       margin: 30px auto;
+       padding-top: 0% !important;
+       height: 60vh !important;
+       
+    }
+}
+@media screen and (max-width:617px) { 
+    .rece1
+    { 
+       width: 60%;
+       height: 40vh !important;
+       
+    }
+    .rece3{
+        position: relative !important;
+    }
+}
+@media screen and (max-width:616px) { 
+    .rece{ 
+        padding: 0 !important;
+        margin: 30px 26% !important;
+    }
+    .rece1
+    { 
+       width: 50%; 
+       height: 60vh !important;
+       
+    }
+    .rece3{ 
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .carousel-control-next
+    { 
+      top: 100px;
+      right: 0;
+    }
+    .carousel-control-prev
+    {     
+      top: 100px;
+      left: 0;
+    }
+    .banne1
+    {
+         
+        top: 100px;
+        left: 26%;
+        
+    }
+    .banne1-sub
+    {
+        margin-left: 30%;
+    }
+    .banne
+    {
+        
+        top: 130px;
+        left: 39%;
+        
+    }
+    .sig-img
+    {
+        width: 50% !important;
+    }
+    .abt-img1
+    {
+        margin: 0 auto;
+        width: 100% !important;
+    }
+    .abt-mt{
+        margin-top: 0px !important;
+    }
+    .mar{
+        margin-left: 38%;
+    }
+    .mar1{
+        margin-left: 17%;
+    }
+    
+}
+
+@media screen and (max-width:649px) {
+    .mar{
+        margin-left: 30%;
+    }
+    .mar1{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:556px) { 
+    .rece{ 
+         width: 60% !important;
+         margin: 0 auto !important;
+    }
+    .rece2{
+        width: 100% !important;
+    }
+    .rece1
+    { 
+       width: 65%;  
+       background-color: white !important;
+       margin-bottom: 60px;
+       
+    }
+    .rece3{ 
+        width: 100% !important; 
+    }
+}
+/* @media screen and (max-width:556px) { 
+    .rece{ 
+         width: 60% !important;
+         margin: 0 auto !important;
+    }
+    .rece2{
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+    .rece1
+    { 
+       width: 65%;  
+       background-color: white !important;
+       margin-bottom: 60px;
+       
+    }
+    .rece3{ 
+        width: 100% !important; 
+    }
+} */
+@media screen and (max-width:575px) {
+    .carousel-control-next
+    { 
+      top: 80px; 
+      width: 80px;
+    }
+    .carousel-control-prev
+    {     
+      top: 80px; 
+      width: 80px;
+    }
+    .banne1
+    {
+         
+        top: 60px;
+        left: 15%;
+        
+    }
+    .banne1-sub
+    {
+        margin-left: 30%;
+    }
+    .banne
+    { 
+        top: 60px;
+        left: 35%; 
+    }
+    .abt-img, .abt-mt
+    {
+        margin-top: 0px;
+    }
+    .tcenter
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width:567px) {
+     
+    .mar1{
+        margin-left: 0%;
+    }
+    
+}
+@media screen and (max-width:523px) {
+    .mar{
+        margin-left: 35%;
+    }
+    .mar1{
+        margin-left: -2%;
+    }
+}
+@media screen and (max-width:513px) {
+     
+    .mar3{
+        margin-left: 20%;
+        
+    }
+    .mar2{
+        margin-left: 30%;
+        margin-top: 15px;
+    }
+    .mar{
+        margin-left: 35%;
+    }
+}
+
+ 
+@media screen and (max-width:470px) {
+    .carousel-control-next
+    { 
+      top: 60px; 
+      width: 60px;
+    }
+    .carousel-control-prev
+    {     
+      top: 60px; 
+      width: 60px;
+    }
+    .abt-img, .abt-mt
+    {
+        margin-top: 0px;
+    }
+    .banne1
+    {
+         
+        top: 40px;
+        left: 10%;
+        
+    }
+    .banne1-sub
+    {
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width:388px) {
+    .rece
+    {
+      width: 70% !important; 
+
+    }
+    .rece2{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .rece1
+    {
+        width: 75% !important;
+        left: 0 !important;
+        margin-bottom: 10px !important;
+      
+    }
+    
+}
+@media screen and (max-width:431px) {
+    .carousel-control-next
+    { 
+      top: 60px; 
+      width: 50px;
+    }
+    .carousel-control-prev
+    {     
+      top: 60px; 
+      width: 50px;
+    }
+    .navbar-brand
+    {
+        margin-left: 20%;
+    }
+
+}
+@media screen and (max-width:403px) {
+    .mar{
+        margin-left: 34%;
+    }
+    .mar3{
+        margin-left: 13%;
+        
+    }
+    .mar2{
+        margin-left: 25%;
+        margin-top: 10px;
+    }
+   
+}
+@media screen and (max-width:415px){
+    .con{
+        width: 300px;
+    }
+     
+}
+@media screen and (max-width:373px) {
+    .carousel-control-next
+    { 
+      top: 40px; 
+      width: 50px;
+    }
+    .carousel-control-prev
+    {     
+      top: 40px; 
+      width: 50px;
+    }
+    .abt-img, .abt-mt
+    {
+        margin-top: 0px;
+    }
+    .mar{
+        margin-left: 30%;
+    }
+    .mar3{
+        margin-left: 5%;
+        
+    }
+    .mar2{
+        margin-left: 20%;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:342px) {
+    
+    .dis{
+        margin-top: 100px !important;
+    }
+    
+}
