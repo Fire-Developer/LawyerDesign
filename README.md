@@ -1,5 +1,6 @@
 # Lawyer Design 
-I'm going to show you how to use modern HTML, CSS,Bootstrap and JavaScript to create a complete Login Page Design with Login and Sign up animations. We'll be using CSS Flexbox, CSS  transition for some cool animation effects and also CSS keyframes!
+I'm going to show you how to use modern HTML, CSS and Bootstrap.
+I have Designed this to show my clients.
 
 # Screenshot
 Here we have project screenshot :
